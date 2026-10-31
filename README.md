@@ -1,8 +1,7 @@
 # BasinSubs v0.1.0
-<a href="https://zenodo.org/badge/latestdoi/444695543"><img src="https://zenodo.org/badge/444695543.svg" alt="DOI"></a>
+<a href="https://zenodo.org/badge/latestdoi/444695543"><img src="https://zenodo.org/badge/444695543.svg" alt="DOI"></a> [![License: BSD-3-Clause](https://img.shields.io/badge/License-BSD--3--Clause-blue.svg)](./LICENSE)
 
 This repository includes R scripts that are developed by Larry Syu-Heng Lai for sedimentary basin subsidence analyses of syn-orogenic strata in the Coastal Range of eastern Taiwan. The data and analytic results are produced by Larry S.-H. Lai and his collaborators, and are used for publications listed below.
-
 
 ## Descriptions of R scripts:
 **Porosity-depth function.R**: Calculating and plotting global averaged porosity-depth function for sandy, muddy, and mean marine sediments.
@@ -10,7 +9,6 @@ This repository includes R scripts that are developed by Larry Syu-Heng Lai for 
 **Age PB dSL-N.R** & **Age PB dSL-S.R**: Fitting linear age-thickness model for composite stratigraphic columns of northern and southern Coastal Range of eastern Taiwan (see details of data in [Lai et al., 2021, *_Sedimentary Geology_*](https://doi.org/10.1016/j.sedgeo.2021.105901) and [Lai et al., 2022, *_Communications Earth & Environment_*](https://doi.org/10.1038/s43247-022-00429-2)). Linear age models are further used to predict (interpolate & extrapolate) the depositional ages for foraminifera-based paleobathymetry data. Averaged values (and their uncertainties) of estimated paleobathymetry and position of relative sea level ([Miller et al., 2020, _Science Advances_](https://doi.org/10.1126/sciadv.aaz1346)) are calcuated using data around age constraints (unit boundaries), that are further used in subsidence analysis.
 
 **Subsidence Analysis N.R** & **Subsidence Analysis S.R**: Conducting decompaction and backstripping procedure (with error propagation) and plotting results in geohistory diagrams for northern and sourthen Coastal Range of eastern Taiwan. Input data include global averaged porosity-depth functions (_Pofun.csv_), averaged positions of relative sea level at age constraints (_SL_Unit_N.csv_ or _SL_Unit_S.csv_), averaged paleobathymetry at age constraints (_PB_Unit_N.csv_ or _PB_Unit_S.csv_), thickness of each unit bounded by stratigraphic heights of age constraints (_Ages_N_new.csv_ or _Ages_S_new.csv_), and fractions of different lithology in each unit (_Litho_N.csv_ or _Litho_N.csv_).
-
 
 ## Descriptions of data/result folders:
 **Thickness folder**: It includes values and uncertainty ranges of the thickness of each unit with corresponding age-constraint bounds, paleobathymetry data and averaged paleobathymetry at each unit age constraint, and fractions of different lithology in each unit.
@@ -20,7 +18,6 @@ This repository includes R scripts that are developed by Larry Syu-Heng Lai for 
 **Backstripping folder**: It includes compiled porosity-depth functions and grain density for sandy, muddy, and mean marine sediments from previous publications. Calculated global averaged porosity-depth functions used in our analysis are also included. See sources of compiled porosity-depth functions and used grain density data in the supplementary information of [Lai et al. (2022)](https://doi.org/10.1038/s43247-022-00429-2).
 
 **output results folder**: It includes results of our linear regressions for age models, subsidence analysis, and calculated long-term uplift and subsidence rates of the Luzon arc crust of eastern Taiwan.
-
 
 ## Citation:
 If you consider using these scripts and data, please cite the following references:
